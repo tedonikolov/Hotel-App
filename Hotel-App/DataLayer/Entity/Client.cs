@@ -12,14 +12,17 @@ namespace hotel.DataLayer.Entity
         public string fullname { get; set; }
         public string phoneNumber { get; set; }
         public string email { get; set; }
+        public string egn { get; set; }
+
 
         public Client() { }
-        public Client(int id, string fullname, string phoneNumber, string email)
+        public Client(int id, string fullname, string phoneNumber, string email, string egn)
         {
             this.id = id;
             this.fullname = fullname;
             this.phoneNumber = phoneNumber;
             this.email = email;
+            this.egn = egn;
         }
     }
 }

@@ -14,12 +14,13 @@ namespace hotel.DataLayer.Entity
         public DateOnly checkIn { get; set; }
         public DateOnly checkOut { get; set; }
         public Profile profile { get; set; }
+        public Decimal price { get; set; }
 
         public Reservation()
         {
 
         }
-        public Reservation(int id, Client client, Room room, DateOnly checkIn, DateOnly checkOut, Profile profile)
+        public Reservation(int id, Client client, Room room, DateOnly checkIn, DateOnly checkOut, Profile profile, Decimal price)
         {
             this.id = id;
             this.client = client;
@@ -27,6 +28,7 @@ namespace hotel.DataLayer.Entity
             this.checkIn = checkIn;
             this.checkOut = checkOut;
             this.profile = profile;
+            this.price = price;
         }
     }
 }
