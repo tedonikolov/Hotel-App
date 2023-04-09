@@ -68,7 +68,7 @@ namespace hotel.DataLayer.Repository
             NpgsqlConnection connection = Connection.open();
             command = connection.CreateCommand();
             command.CommandType = System.Data.CommandType.Text;
-            command.CommandText = $"SELECT \"ID_profile\",\"Username\",\"Password\" FROM \"Profile\" WHERE \"ID_profile\"!=1";
+            command.CommandText = $"SELECT \"ID_profile\" as \"ID\", \"Username\" as \"Потребител\", \"Password\" as \"Парола\" FROM \"Profile\" WHERE \"ID_profile\"!=1";
             NpgsqlDataReader reader = command.ExecuteReader();
             table.Load(reader);
 
