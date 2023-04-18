@@ -45,9 +45,14 @@ namespace hotel
             dateTimePicker3.Value = checkin.Value;
             dateTimePicker4.Value = checkout.Value;
             egn.Text = "";
+            egn.BackColor = Color.White;
             name.Text = "";
+            name.BackColor = Color.White;
             phone.Text = "";
+            phone.BackColor = Color.White;
             email.Text = "";
+            email.BackColor = Color.White;
+            button1.Text = "Добавяне";
             ((Control)this.room).Enabled = true;
             tabControl.TabPages.Insert(1,room);
         }
